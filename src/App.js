@@ -37,18 +37,19 @@ const options = [
 ]
 
 export default () => {
+    const PATHNAME = window.location.pathname
     const [selected, setSelected] = useState(options[0]);
-
+    console.log(window.location)
     return (
         <div>
             <Header />
-            <Route path="/">
+            <Route path={`${PATHNAME}/`}>
                 <Accordion items={items} />
             </Route>
-            <Route path="/list">
+            <Route path={`${PATHNAME}/list`}>
                 <Search />
             </Route>
-            <Route path="/dropdown">
+            <Route path={`${PATHNAME}/dropdown`}>
                 <Dropdown 
                     label="Select a color"
                     options={options}
@@ -56,7 +57,7 @@ export default () => {
                     onSelectedChange={setSelected}
                 />
             </Route>
-            <Route path="/translate">
+            <Route path={`${PATHNAME}/translate`}>
                 <Translate />
             </Route>
         </div>

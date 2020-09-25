@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Credit to the [React Tutotial](https://www.udemy.com/course/react-redux/) done by Stephen Grider for guiding the making of this application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Credit to the [React Tutotial](https://www.udemy.com/course/react-redux/) done by Stephen Grider for guiding the making of this application. Note that the Translate widget does not work due to restrictions on the api.
 
 
 ## Available Scripts
